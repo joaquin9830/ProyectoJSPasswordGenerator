@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Generador de contraseñas/style.css">
+</head>
+  <body>
+    
+    <div class="container my-4">
+        <div class="row justify-content-md-center">
+            <div class="col-md-4 bg-dark text-light">
+                <div class="my-3">
+                    <h3 class="text-center">Generador de contraseñas</h3>
+                </div>
+                <div class="mb-3">
+                    <label for="inputLength" class="form-label">Length</label>
+                    <input type="number" id="inputLength" class="form-control text-center" min="1" max="50" value="12" />
+                </div>
+                <div class="form-check my-3">
+                    <input type="checkbox" id="checkbox1" class="form-check-input" />
+                    <label class="form-check-label" for="checkbox1">Incluir números</label>
+                </div>
+                <div class="form-check my-3">
+                    <input type="checkbox" id="checkbox2" class="form-check-input" />
+                    <label class="form-check-label" for="checkbox2">Incluir simbolos</label>
+                </div>
+                <div class="d-grid gap-2 my-3">
+                    <button class="btn btn-primary" id="btnGenerate">Generar contraseña</button>
+                </div>
+                <hr />
+                <div class="d-grid gap-2 py-3">
+                    <span id="generatedPassword" class="badge bg-success"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="../Generador de contraseñas/script.js"></script>
+  </body>
+</html>
+
+
+
+   
